@@ -8,7 +8,8 @@ module.exports = {
       },
       colors: {
       'ReD': "#b11e21",
-      'GrisD': '#1e2326'
+      'GrisD': '#1e2326',
+      'Greas': '#252A2E',
     },
     fontFamily: {
       'rigt': ['"Righteous"'],

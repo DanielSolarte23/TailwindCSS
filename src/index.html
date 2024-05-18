@@ -1,455 +1,474 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800; 0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Lobster&family=Lugrasimo&family=Protest+Riot&family=Roboto+Slab:wght@500&family =Campanilla y familia= Estalinista+Uno&familia=Trabajo+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <title>Document</title>
-  </head>
-  <body class="m-0 text-['Work Sans']">
-    <header class="contenedor-header bg-[#1e2326] fixed w-[100%] top-0 left-0 z-50">
-      <header class="max-w-[1100px] m-auto flex justify-between items-center p-[20px]">
-          <aside class="logo">
-              <a class=" text-['Righteous'] text-4xl text-[#b11e21] href="#">Daniel</a>
-          </aside>
-          <nav id="nav">
-              <ul class="flex list-none">
-                  <li><a class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                  <li><a class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#Sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                  <li><a class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
-                  <li><a class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                  <li><a class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
-                  <li><a class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-              </ul>
-          </nav>
-          <div class="nav-responsive bg-[#b11e21] text-white p-3 rounded-md cursor-pointer hidden" onclick="mostrarOcultarMenu()">
-              <i class="fa-solid fa-bars"></i>
-          </div>
-      </header>
-  </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Daniel Solarte</title>
+    <link rel="shortcut icon" href="/src/img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <!-- SECCION INICIO -->
-  <section class="inicio g-gradient-to-r from-[#191d20] to-[#1a1f21] bg-fondo-inicio bg-cover h-[100vh] text-white flex items-center" id="inicio">
-      <header class="contenido-banner p-5 pt-0 max-w-[450px] max-h-[700px] m-auto text-center rounded-[40px]">
-          <article class="contenedor-img flex justify-center">
-              <img class="mt-7 border-[5px] border-[#b11e21] block w-[70%] rounded-full " src="./img/perfil.jpg" alt="perfil">
-          </article>
-          <h1 class="mt-10 text-4xl">DANIEL SOLARTE</h1>
-          <h2 class="text-lg font-normal">DESARROLLADOR FRONTEND</h2>
-          <section class="redes">
-              <a class="text-white inline-block no-underline border-2 border-white rounded-[100%] w-10 h-10 l-h leading-10 m-[40px 5px] text-lg transition-all hover:bg.[#b11e21]" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a class="text-white inline-block no-underline border-2 border-white rounded-[100%] w-10 h-10 l-h leading-10 m-[40px 5px] text-lg transition-all hover:bg.[#b11e21]" href="#"><i class="fa-brands fa-github"></i></a>
-              <a class="text-white inline-block no-underline border-2 border-white rounded-[100%] w-10 h-10 l-h leading-10 m-[40px 5px] text-lg transition-all hover:bg.[#b11e21]" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+<body class="m-0 font-work-sans">
+    <header
+        class="contenedor-header h-14 flex justify-center bg-transparent fixed top-0 left-0 z-50 w-full transition-colors duration-300"
+        id="header">
+        <div class="max-w-[1100px] flex justify-between items-center gap-10 p-[20px]">
+            <aside class="logo">
+                <a class="font-righteous text-4xl text-[#b11e21]" href="#">Daniel</a>
+            </aside>
+            <nav id="nav">
+                <ul class="flex list-none">
+                    <li><a id="ini" class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#inici"
+                            onclick="seleccionar()">INICIO</a></li>
+                    <li><a id="sobreM" class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#Sobremi"
+                            onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a id="habili" class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#habilidades"
+                            onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a id="curr" class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#curriculum"
+                            onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a id="portaf" class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#portafolio"
+                            onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a id="contac" class="text-white ml-4 mr-4 p-1 transition-all hover:text-[#b11e21]" href="#contacto"
+                            onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive bg-[#b11e21] text-white p-3 rounded-md cursor-pointer hidden"
+                onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    </header>
 
-          </section>
-      </header>
-  </section>
+    <!-- SECCION INICIO -->
+    <section 
+         class="inicio g-gradient-to-r from-[#191d20] to-[#1a1f21] bg-fondo-inicio bg-cover h-[100vh] text-white flex items-center"
+        id="inici">
+        <header class="contenido-banner p-5 pt-0 max-w-[450px] max-h-[700px] m-auto text-center rounded-[40px]">
+            <article class="contenedor-img flex justify-center">
+                <img class="mt-7 animate-pulse border-[5px] border-[#b11e21] block w-[70%] rounded-full " src="./img/perfil.jpg"
+                    alt="perfil">
+            </article>
+            <h1 class="mt-10 font-righteous text-4xl">DANIEL SOLARTE</h1>
+            <h2 class="text-lg font-normal">DESARROLLADOR FRONTEND</h2>
+            <section class="redes">
+                <a class="text-white inline-block no-underline border-2 border-white rounded-[100%] w-10 h-10 l-h leading-10 m-[40px 5px] text-lg transition-all hover:bg.[#b11e21]"
+                    href="https://www.facebook.com/danisolart/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="text-white inline-block no-underline border-2 border-white rounded-[100%] w-10 h-10 l-h leading-10 m-[40px 5px] text-lg transition-all hover:bg.[#b11e21]"
+                    href="https://github.com/DanielSolarte23" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a class="text-white inline-block no-underline border-2 border-white rounded-[100%] w-10 h-10 l-h leading-10 m-[40px 5px] text-lg transition-all hover:bg.[#b11e21]"
+                    href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </section>
+        </header>
+    </section>
 
     <!-- SECCION SOBRE MI -->
-    <section id="Sobremi" class="sobremi h-[100vh] flex items-center bg-GrisD text-white pt-[50px] pb-[50px] pl-[20px] pr-[20px]">
-      <main class="contenido-seccion max-w-[1100px] m-auto">
-        <h2 class="text-5xl font-rigt text-center p-5">Sobre Mi</h2>
-        <p class="text-base leading-5 mb-5">
-          <span class="text-ReD font-bold">Hola Soy Daniel Solarte</span>Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Ipsum vel quis et ullam delectus iste
-          molestiae tempora fuga hic blanditiis aperiam pariatur sapiente
-          corrupti similique repellendus, recusandae corporis debitis
-          praesentium.
-        </p>
+    <section id="Sobremi"
+        class="sobremi h-[100vh] flex items-center bg-GrisD text-white pt-[50px] pb-[50px] pl-[20px] pr-[20px]">
+        <main class="contenido-seccion max-w-[1100px] m-auto">
+            <h2 class="text-5xl font-righteous text-center p-5">Sobre Mi</h2>
+            <p class="text-base leading-5 mb-5">
+                <span class="text-ReD font-bold">Hola Soy Daniel Solarte</span>Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Ipsum vel quis et ullam delectus iste
+                molestiae tempora fuga hic blanditiis aperiam pariatur sapiente
+                corrupti similique repellendus, recusandae corporis debitis
+                praesentium.
+            </p>
 
-        <section class="fila flex">
-          <!-- datos personales -->
-          <article class="col w-[50%]">
-            <h3 class="text-3xl font-rigt mb-6" >Datos Personales</h3>
-            <ul class="list-none">
-              <li class="mt-[12px] mb[12px]">
-                <strong class="inline-block text-ReD w-[130px]">Fecha de Nacimiento</strong>
-                16-10-1998
-              </li>
-              <li class="mt-[12px] mb[12px]">
-                <strong class="inline-block text-ReD w-[130px]">Telefono</strong>
-                3145636042
-              </li>
-              <li class="mt-[12px] mb[12px]">
-                <strong class="inline-block text-ReD w-[130px]">Correo</strong>
-                Royersolarte22@gmail.com
-              </li>
-              <li class="mt-[12px] mb[12px]">
-                <strong class="inline-block text-ReD w-[130px]">Direccion</strong>
-                Calle 8b #21a-54 Popayan(Cauca), Colombia
-              </li>
-              <li class="mt-[12px] mb[12px]">
-                <strong class="inline-block text-ReD w-[130px]">Cargo</strong>
-                <span class="bg-ReD p-1 font-bold rounded-md">Desarrollador Frontend</span>
-              </li>
-            </ul>
-          </article>
-          <!-- interes -->
-          <article class="col w-[50%] border-2 border-red-700">
-            <h3 class="text-3xl font-rigt mb-6" >Intereses</h3>
-            <section class="flex flex-wrap">
-              <article class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>JUEGOS</span>
-              </article>
-              <article class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
-                <i class="fa-solid fa-headphones text-3xl mb-2"></i>
-                <span>MUSICA</span>
-              </article>
-              <article class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
-                <i class="fa-solid fa-plane text-3xl mb-2"></i>
-                <span>VIAJES</span>
-              </article>
-              <article class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
-                <i class="fa-solid fa-motorcycle text-3xl mb-2"></i>
-                <span>MOTOS</span>
-              </article>
-              <article class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
-                <i class="fa-solid fa-futbol text-3xl mb-2"></i>
-                <span>FUTBOL</span>
-              </article>
-              <article class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
-                <i class="fa-solid fa-film text-3xl mb-2"></i>
-                <span>PELICULAS</span>
-              </article>
-              <article class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
-                <i class="fa-solid fa-car text-3xl mb-2"></i>
-                <span>AUTOS</span>
-              </article>
-              <article class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
-                <i class="fa-solid fa-book text-3xl mb-2"></i>
-                <span>LEER</span>
-              </article>
+            <section class="fila flex">
+                <!-- datos personales -->
+                <article class="col w-[50%]">
+                    <h3 class="text-3xl font-righteous mb-6">Datos Personales</h3>
+                    <ul class="list-none">
+                        <li class="mt-[12px] mb-[12px]">
+                            <strong class="inline-block text-ReD w-[130px]">Fecha de Nacimiento</strong>
+                            16-10-1998
+                        </li>
+                        <li class="mt-[12px] mb-[12px]">
+                            <strong class="inline-block text-ReD w-[130px]">Teléfono</strong>
+                            3145636042
+                        </li>
+                        <li class="mt-[12px] mb-[12px]">
+                            <strong class="inline-block text-ReD w-[130px]">Correo</strong>
+                            Royersolarte22@gmail.com
+                        </li>
+                        <li class="mt-[12px] mb-[12px]">
+                            <strong class="inline-block text-ReD w-[130px]">Dirección</strong>
+                            Calle 8b #21a-54 Popayan(Cauca), Colombia
+                        </li>
+                        <li class="mt-[12px] mb-[12px]">
+                            <strong class="inline-block text-ReD w-[130px]">Cargo</strong>
+                            <span class="bg-ReD p-1 font-bold rounded-md">Desarrollador Frontend</span>
+                        </li>
+                    </ul>
+                </article>
+                <!-- interes -->
+                <article class="col w-[50%]">
+                    <h3 class="text-3xl font-righteous mb-6">Intereses</h3>
+                    <section class="flex flex-wrap">
+                        <article
+                            class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
+                            <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+                            <span>JUEGOS</span>
+                        </article>
+                        <article
+                            class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
+                            <i class="fa-solid fa-headphones text-3xl mb-2" aria-hidden="true"></i>
+                            <span>MÚSICA</span>
+                        </article>
+                        <article
+                            class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
+                            <i class="fa-solid fa-plane text-3xl mb-2" aria-hidden="true"></i>
+                            <span>VIAJES</span>
+                        </article>
+                        <article
+                            class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
+                            <i class="fa-solid fa-motorcycle text-3xl mb-2" aria-hidden="true"></i>
+                            <span>MOTOS</span>
+                        </article>
+                        <article
+                            class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
+                            <i class="fa-solid fa-futbol text-3xl mb-2" aria-hidden="true"></i>
+                            <span>FÚTBOL</span>
+                        </article>
+                        <article
+                            class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
+                            <i class="fa-solid fa-film text-3xl mb-2" aria-hidden="true"></i>
+                            <span>PELÍCULAS</span>
+                        </article>
+                        <article
+                            class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
+                            <i class="fa-solid fa-car text-3xl mb-2" aria-hidden="true"></i>
+                            <span>AUTOS</span>
+                        </article>
+                        <article
+                            class="interes w-[100px] h-[100px] bg-[#252A2E] rounded-xl mr-4 mb-4 flex flex-col items-center justify-center transition-all hover:bg-ReD">
+                            <i class="fa-solid fa-book text-3xl mb-2" aria-hidden="true"></i>
+                            <span>LEER</span>
+                        </article>
+                    </section>
+                </article>
             </section>
-          </article>
-        </section>
-        <button class="cursor-pointer bg-transparent border-2 w-fit block mt-5 mb-5 ml-auto mr-auto pt-2 pb-2 pl-5 pr-5 text-base text-white relative z-10 overflow-auto">
-          DESCARGAR HV<i class="fa-solid fa-download"></i>
-          <span class="overlay absolute top-0 left-0 w-0 h-[100%] bg-ReD z-[-1] transition-all"></span>
-        </button>
-      </main>
+            <button
+                class="cursor-pointer bg-transparent border-2 w-fit block mt-5 mb-5 ml-auto mr-auto pt-2 pb-2 pl-5 pr-5 text-base text-white relative z-10 overflow-auto">
+                DESCARGAR HV<i class="fa-solid fa-download"></i>
+                <span class="overlay absolute top-0 left-0 w-0 h-[100%] bg-ReD z-[-1] transition-all"></span>
+            </button>
+        </main>
     </section>
     <!-- Seccion HABILIDADES -->
-    <section class="skills bg-GrisD text-white pt-12 pr-5 pb-12 pl-5" id="habilidades">
-      <h2 class="text-5xl font-rigt text-center p-5">HABILIDADES</h2>
-      <main class="fila flex">
-        <!-- HABILIDADES TECNICAS -->
-        <section class="col w-[50%] pt-0 pl-5 pr-5 pb-0">
-          <h3 class="text-5xl font-rigt mb-6">Habilidades Tecnicas</h3>
-          <article class="skill">
-            <span class="font-bold block mb-3">Javascript</span>
-            <section class="barra-skill h-2 w-[80%] bg-[#131517] relative mb-7">
-              <aside class="progreso javascript bg-ReD absolute left-0 top-0 h-2">
-                <span class="absolute h-9 w-9 bg-ReD rounded-3xl leading-5 text-center top-[-17px] rigth-[-15px] text-xl">20%</span>
-              </aside>
+      <!-- Seccion HABILIDADES -->
+      <section class="skills bg-[#252A2E] text-white pt-[50px] pb-[50px] pl-[20px] pr-[20px] " id="habilidades">
+        <h2 class="text-5xl font-righteous text-center p-5">HABILIDADES</h2>
+        <main class="fila flex">
+            <!-- HABILIDADES TECNICAS -->
+            <section class="col  w-2/4 py-0  pl-16">
+                <h3 class="text-5xl font-righteous mb-6 h-32">Habilidades Tecnicas</h3>
+                <article class="skill">
+                    <span class="font-bold block mb-3">Javascript</span>
+                    <section class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso javascript bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">20%</span>
+                        </aside>
+                    </section>
+                </article>
+                <article class="skill">
+                    <span class="font-bold block mb-3">HTML</span>
+                    <section class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso htmll bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">60%</span>
+                        </aside>
+                    </section>
+                </article>
+                <article class="skill">
+                    <span class="font-bold block mb-3">CSS</span>
+                    <section class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso csss bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">60%</span>
+                        </aside>
+                    </section>
+                </article>
+                <article class="skill">
+                    <span class="font-bold block mb-3">Photoshop</span>
+                    <section class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso photoshop bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">40%</span>
+                        </aside>
+                    </section>
+                </article>
+                <article class="skill">
+                    <span class="font-bold block mb-3">Ilustrator</span>
+                    <section class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso ilustrator bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">40%</span>
+                        </aside>
+                    </section>
+                </article>
             </section>
-          </article>
-          <article class="skill">
-            <span class="font-bold block mb-3">HTML</span>
-            <section class="barra-skill h-2 w-[80%] bg-[#131517] relative mb-7">
-              <aside class="progreso htmll bg-ReD absolute left-0 top-0 h-2">
-                <span class="absolute h-9 w-9 bg-ReD rounded-3xl leading-5 text-center top-[-17px] rigth-[-15px] text-xl">60%</span>
-              </aside>
-            </section>
-          </article>
-          <article class="skill">
-            <span class="font-bold block mb-3">CSS</span>
-            <section class="barra-skill h-2 w-[80%] bg-[#131517] relative mb-7">
-              <aside class="progreso csss bg-ReD absolute left-0 top-0 h-2">
-                <span class="absolute h-9 w-9 bg-ReD rounded-3xl leading-10 text-center top-[-17px] rigth-[-15px] text-lg">60%</span>
-              </aside>
-            </section>
-          </article>
-          <article class="skill">
-            <span class="font-bold block mb-3">Photoshop</span>
-            <section class="barra-skill h-2 w-[80%] bg-[#131517] relative mb-7">
-              <aside class="progreso photoshop bg-ReD absolute left-0 top-0 h-2">
-                <span class="absolute h-9 w-9 bg-ReD rounded-3xl leading-5 text-center top-[-17px] rigth-[-15px] text-xl">40%</span>
-              </aside>
-            </section>
-          </article>
-          <article class="skill">
-            <span class="font-bold block mb-3">Ilustrator</span>
-            <section class="barra-skill h-2 w-[80%] bg-[#131517] relative mb-7">
-              <aside class="progreso ilustrator bg-ReD absolute left-0 top-0 h-2">
-                <span class="absolute h-9 w-9 bg-ReD rounded-3xl leading-5 text-center top-[-17px] rigth-[-15px] text-xl">40%</span>
-              </aside>
-            </section>
-          </article>
-        </section>
-        <!-- HABILIDADES Profesionales -->
-        <article class="col">
-          <h3>Habilidades Profesionales</h3>
-          <section class="skill">
-            <span>Comunicacion</span>
-            <article class="barra-skill">
-              <aside class="progreso comunicacion">
-                <span>60%</span>
-              </aside>
+            <!-- HABILIDADES Profesionales -->
+            <article class="col  w-2/4 py-0 px-5">
+                <h3 class="text-5xl font-righteous mb-6 h-32">Habilidades Profesionales</h3>
+                <section class="skill">
+                    <span class="font-bold block mb-3">Comunicacion</span>
+                    <article class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso comunicacion bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">60%</span>
+                        </aside>
+                    </article>
+                </section>
+                <section class="skill">
+                    <span class="font-bold block mb-3">Trabajo en Equipo</span>
+                    <article class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso trabajo-equipo bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">80%</span>
+                        </aside>
+                    </article>
+                </section>
+                <section class="skill">
+                    <span class="font-bold block mb-3">Creatividad</span>
+                    <article class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso creatividad bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">90%</span>
+                        </aside>
+                    </article>
+                </section>
+                <section class="skill">
+                    <span class="font-bold block mb-3">Dedicacion</span>
+                    <article class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso dedicacion bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">90%</span>
+                        </aside>
+                    </article>
+                </section>
+                <section class="skill">
+                    <span class="font-bold block mb-3">Gestion de Proyectos</span>
+                    <article class="barra-skill h-2 w-3/4 bg-[#131517] relative mb-8">
+                        <aside class="progreso gestion-proyectos bg-ReD absolute left-0 top-0 h-2">
+                            <span
+                                class="absolute h-10 w-10 bg-ReD rounded-[50px] leading-10 text-center top-[-17px] right-[-15px] text-sm">70%</span>
+                        </aside>
+                    </article>
+                </section>
             </article>
-          </section>
-          <section class="skill">
-            <span>Trabajo en Equipo</span>
-            <article class="barra-skill">
-              <aside class="progreso trabajo-equipo">
-                <span>80%</span>
-              </aside>
-            </article>
-          </section>
-          <section class="skill">
-            <span>Creatividad</span>
-            <article class="barra-skill">
-              <aside class="progreso creatividad">
-                <span>90%</span>
-              </aside>
-            </article>
-          </section>
-          <section class="skill">
-            <span>Dedicacion</span>
-            <article class="barra-skill">
-              <aside class="progreso dedicacion">
-                <span>90%</span>
-              </aside>
-            </article>
-          </section>
-          <section class="skill">
-            <span>Gestion de Proyectos</span>
-            <article class="barra-skill">
-              <aside class="progreso gestion-proyectos">
-                <span>70%</span>
-              </aside>
-            </article>
-          </section>
-        </article>
-      </main>
+        </main>
     </section>
 
     <!-- SECCION CCURRICULUM -->
-    <section id="curriculum" class="curriculum">
-      <div class="contenido-seccion">
-        <h2>Curriculum</h2>
-        <div class="fila">
-          <div class="col derecha">
-            <h3>Educacion</h3>
-            <br /><br /><br />
-            <div class="item izq">
-              <h4>Tegnologo en Analisis y desarrollo de software</h4>
-              <span class="casa">Sena</span>
-              <span class="fecha">2023 - 2025</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                nostrum praesentium fuga nam modi, dolor illo itaque ea vero.
-                Deleniti earum ex voluptatibus ab doloribus est minus eum vero
-                rem?
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
+    <section id="curriculum" class="curriculum bg-GrisD text-white py-12 px-5 ">
+        <div class="contenido-seccion max-w-[1200px] m-auto">
+            <h2 class="text-5xl font-righteous text-center p-5">Curriculum</h2>
+            <div class="fila flex justify-between">
+                <div class="col derecha w-1/2  py-0 px-5 border-r-4 ">
+                    <h3 class="text-5xl font-righteous mb-6 h-[27px]">Educacion</h3><br>
+                    <div class="item izq  border-r-2 border-ReD mr-3 p-6 mb-8 bg-[#252A2E] relative">
+                        <h4 class="text-xl mb-3">Tegnologo en Analisis y desarrollo de software</h4>
+                        <span class="casa text-ReD text-2xl font-bold block">Sena</span>
+                        <span class="fecha block text-ReD mb-3">2023 - 2025</span>
+                        <p class="leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum
+                            praesentium fuga nam
+                            modi, dolor illo itaque ea vero. Deleniti earum ex voluptatibus ab doloribus est minus eum
+                            vero rem?</p>
+                        <div class="conectori h-1 bg-ReD w-12 absolute top-1/2 right-[-47px] z-[5]">
+                            <div class=" circuloi block h-3 w-3 rounded-[50%] bg-ReD float-right relative bottom-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq border-r-2 border-ReD mr-3  p-6 mb-8 bg-[#252A2E] relative">
+                        <h4 class="text-xl mb-3">Tecnico profesional en servicio de policia</h4>
+                        <span class="casa text-ReD text-2xl font-bold block">Policia</span>
+                        <span class="fecha block text-ReD mb-3">2018 - 2019</span>
+                        <p class="leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum
+                            praesentium fuga nam
+                            modi, dolor illo itaque ea vero. Deleniti earum ex voluptatibus ab doloribus est minus eum
+                            vero rem?</p>
+                        <div class="conectori h-1 bg-ReD w-12 absolute top-1/2 right-[-47px] z-[5]">
+                            <div class="circuloi block h-3 w-3 rounded-[50%] bg-ReD float-right relative bottom-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq  border-r-2 border-ReD mr-3 p-6 mb-8 bg-[#252A2E] relative">
+                        <h4 class="text-xl mb-3">tal</h4>
+                        <span class="casa text-ReD text-2xl font-bold block">Sena</span>
+                        <span class="fecha block text-ReD mb-3">2020 - 2021</span>
+                        <p class="leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum
+                            praesentium fuga nam
+                            modi, dolor illo itaque ea vero. Deleniti earum ex voluptatibus ab doloribus est minus eum
+                            vero rem?</p>
+                        <div class="conectori h-1 bg-ReD w-12 absolute top-1/2 right-[-47px] z-[5]">
+                            <div class="circuloi block h-3 w-3 rounded-[50%] bg-ReD float-right relative bottom-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col izquierda w-1/2  py-0 px-5 ">
+                    <h3 class="text-5xl font-righteous mb-8 h-5">Experiencia de Trabajo</h3><br>
+                    <div class="item der border-l-2 border-ReD ml-3 p-6 mb-8 bg-[#252A2E] relative">
+                        <h4 class="text-xl mb-3">ssss</h4>
+                        <span class="casa text-ReD text-2xl font-bold block">pols</span>
+                        <span class="fecha block text-ReD mb-3">2019 - 2022</span>
+                        <p class="leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum
+                            praesentium fuga nam
+                            modi, dolor illo itaque ea vero. Deleniti earum ex voluptatibus ab doloribus est minus eum
+                            vero rem?</p>
+                        <div class="conectord h-1 bg-ReD w-12 absolute top-[50%] left-[-47px] z-[5]">
+                            <div class="circulod block h-3 w-3 rounded-[50%] bg-ReD float-left relative bottom-1"></div>
+                        </div>
+                    </div>
+                    <div class="item der border-l-2 border-ReD ml-3 p-6 mb-8 bg-[#252A2E] relative">
+                        <h4 class="text-xl mb-3">ssss</h4>
+                        <span class="casa text-ReD text-2xl font-bold block">pols</span>
+                        <span class="fecha block text-ReD mb-3">2019 - 2022</span>
+                        <p class="leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum
+                            praesentium fuga nam
+                            modi, dolor illo itaque ea vero. Deleniti earum ex voluptatibus ab doloribus est minus eum
+                            vero rem?</p>
+                        <div class="conectord h-1 bg-ReD w-12 absolute top-[50%] left-[-47px] z-[5]">
+                            <div class="circulod block h-3 w-3 rounded-[50%] bg-ReD float-left relative bottom-1"></div>
+                        </div>
+                    </div>
+                    <div class="item der border-l-2 border-ReD ml-3 p-6 mb-8 bg-[#252A2E] relative">
+                        <h4 class="text-xl mb-3">ssss</h4>
+                        <span class="casa text-ReD text-2xl font-bold block">pols</span>
+                        <span class="fecha block text-ReD mb-3">2019 - 2022</span>
+                        <p class="leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum
+                            praesentium fuga nam
+                            modi, dolor illo itaque ea vero. Deleniti earum ex voluptatibus ab doloribus est minus eum
+                            vero rem?</p>
+                        <div class="conectord h-1 bg-ReD w-12 absolute top-[50%] left-[-47px] z-[5]">
+                            <div class="circulod block h-3 w-3 rounded-[50%] bg-ReD float-left relative bottom-1"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item izq">
-              <h4>Tecnico profesional en servicio de policia</h4>
-              <span class="casa">Policia</span>
-              <span class="fecha">2018 - 2019</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                nostrum praesentium fuga nam modi, dolor illo itaque ea vero.
-                Deleniti earum ex voluptatibus ab doloribus est minus eum vero
-                rem?
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <div class="item izq">
-              <h4>tal</h4>
-              <span class="casa">Sena</span>
-              <span class="fecha">2020 - 2021</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                nostrum praesentium fuga nam modi, dolor illo itaque ea vero.
-                Deleniti earum ex voluptatibus ab doloribus est minus eum vero
-                rem?
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col izquierda">
-            <h3>Experiencia de Trabajo</h3>
-            <div class="item der">
-              <h4>ssss</h4>
-              <span class="casa">Policia</span>
-              <span class="fecha">2019 - 2022</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                nostrum praesentium fuga nam modi, dolor illo itaque ea vero.
-                Deleniti earum ex voluptatibus ab doloribus est minus eum vero
-                rem?
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-            <div class="item der">
-              <h4>ssss</h4>
-              <span class="casa">pols</span>
-              <span class="fecha">2019 - 2022</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                nostrum praesentium fuga nam modi, dolor illo itaque ea vero.
-                Deleniti earum ex voluptatibus ab doloribus est minus eum vero
-                rem?
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-            <div class="item der">
-              <h4>ssss</h4>
-              <span class="casa">pols</span>
-              <span class="fecha">2019 - 2022</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                nostrum praesentium fuga nam modi, dolor illo itaque ea vero.
-                Deleniti earum ex voluptatibus ab doloribus est minus eum vero
-                rem?
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- SECCION PORTAFOLIO -->
-    <section class="portafolio" id="portafolio">
-      <div class="contenido-seccion">
-        <h2>POTAFOLIO</h2>
-        <div class="galeria">
-          <div class="proyecto">
-            <a href="/juego culebrita.html">
-              <img src="img/GameSnake.png" alt="Game Snack" />
-              <div class="overlay">
-                <h3>Juego Culebrita</h3>
-              </div>
-            </a>
-          </div>
-          <div class="proyecto">
-            <a href="/calculadora.html.html">
-              <img src="img/Calculadora.png" alt="Game Snack" />
-              <div class="overlay">
-                <h3>Calculadora</h3>
-              </div>
-            </a>
-          </div>
-          <div class="proyecto">
-            <a href="/cronometro.html">
-              <img src="img/Cronometro.png" alt="Game Snack" />
-              <div class="overlay">
-                <h3>Cronometro</h3>
-              </div>
-            </a>
-          </div>
-          <div class="proyecto">
-            <a href="/organizador.html">
-              <img src="img/Organizador de tareas.png" alt="Game Snack" />
-              <div class="overlay">
-                <h3>Organizador de tareas</h3>
-              </div>
-            </a>
-          </div>
+    <section class="portafolio bg-[#252A2E] text-white py-12 px-5 h-screen" id="portafolio">
+        <div class="contenido-seccion max-w-[1100px] m-auto">
+            <h2 class="text-5xl font-righteous text-center p-5">POTAFOLIO</h2>
+            <div class="galeria flex flex-wrap justify-between">
+                <div class="proyecto relative max-w-80 h-fit m-3">
+                    <a class="text-white" href="/juego culebrita.html">
+                        <img class="w-full block" src="img/GameSnake.png" alt="Game Snack">
+                        <div
+                            class="overlay absolute top-0 w-full h-full text-center bg-gradient-to-b from-ReD to-red-950 flex flex-col justify-center transition-opacity text-xs tracking-widest opacity-0 hover:opacity-60">
+                            <h3 class='mb-5 transition'>Juego Culebrita</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto relative max-w-80 h-fit m-3">
+                    <a class="text-white" href="/calculadora.html.html">
+                        <img class="w-full block " src="img/Calculadora.png" alt="Game Snack">
+                        <div
+                            class="overlay absolute top-0 w-full h-full text-center bg-gradient-to-b from-ReD to-red-950 flex flex-col justify-center transition-opacity text-xs tracking-widest opacity-0 hover:opacity-60">
+                            <h3 class='mb-5 transition-all'>Calculadora</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto relative max-w-80 h-fit m-3">
+                    <a class="text-white" href="/cronometro.html">
+                        <img class="w-full block" src="img/Cronometro.png" alt="Game Snack">
+                        <div
+                            class="overlay absolute top-0 w-full h-full text-center bg-gradient-to-b from-ReD to-red-950 flex flex-col justify-center transition-opacity text-xs tracking-widest opacity-0 hover:opacity-90">
+                            <h3 class='mb-5 transition-all'>Cronometro</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto relative max-w-80 h-fit m-3">
+                    <a class="text-white" href="/organizador.html">
+                        <img class="w-full block" src="img/Organizador de tareas.png" alt="Game Snack">
+                        <div
+                            class="overlay absolute top-0 w-full h-full text-center bg-gradient-to-b from-ReD to-red-950 flex flex-col justify-center transition-opacity text-xs tracking-widest opacity-0 hover:opacity-90">
+                            <h3 class='mb-5 transition-all'>Organizador de tareas</h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- SECCION CONTACTO -->
-    <section class="contacto" id="contacto">
-      <div class="contenido-seccion">
-        <h2>CONTACTO</h2>
-        <div class="fila">
-          <!-- FORMULARIO -->
-          <form class="col" id="emailForm" action="sendEmail.php" method="post">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Tu Nombre"
-            />
-            <input
-              type="tel"
-              id="tel"
-              name="tel"
-              required
-              placeholder="Numero telefónico"
-            />
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              required
-              placeholder="Tema"
-            />
-            <textarea
-              name="message"
-              id="message"
-              required
-              cols="30"
-              rows="10"
-              placeholder="Mensaje"
-            ></textarea>
-            <button type="submit">
-              Enviar Mensaje<i class="fa-sharp fa-solid fa-paper-plane"></i>
-              <span class="overlay"></span>
-            </button>
-          </form>
-          <!-- Mapa -->
-          <div class="col">
-            <img src="img/maps.png" alt="Mapa" />
-            <div class="info">
-              <ul>
-                <li>
-                  <i class="fa-sharp fa-solid fa-location-dot"></i>
-                  Popayan(Cauca), Colombia
-                </li>
-                <li>
-                  <i class="fa-sharp fa-solid fa-mobile-screen"></i>
-                  Llamame: +57 3145636042
-                </li>
-                <li>
-                  <i class="fa-sharp fa-solid fa-envelope"></i>
-                  Email: Royersolarte22@gmail.com
-                </li>
-              </ul>
+    <section class="contacto bg-fondo-inicio bg-cover h-[100vh] bg-GrisD text-white py-10 px-0" id="contacto">
+        <div class="contenido-seccion max-w-[1100px] m-auto">
+            <h2 class="text-5xl font-righteous text-center py-5 px-0">CONTACTO</h2>
+            <div class="fila flex">
+                <!-- FORMULARIO -->
+                <form class="col w-1/2 p-3 relative h-1/2" id="emailForm" action="sendEmail.php" method="post">
+                    <input class="block w-full p-4 border-none mb-5 bg-[#252A2E] text-white text-lg" type="text"
+                        id="name" name="name" required placeholder="Tu Nombre">
+                    <input class="block w-full p-4 border-none mb-5 bg-[#252A2E] text-white text-lg" type="tel" id="tel"
+                        name="tel" required placeholder="Numero telefónico">
+                    <input class="block w-full p-4 border-none mb-5 bg-[#252A2E] text-white text-lg" type="text"
+                        id="subject" name="subject" required placeholder="Tema">
+                    <textarea class="block w-full h-[100px] p-4 border-none mb-5 bg-[#252A2E] text-white text-lg"
+                        name="message" id="message" required cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button
+                        class="cursor-pointer bg-transparent border-2 border-white w-fit block my-5 mx-auto py-3 px-5 text-base text-white relative z-10"
+                        type="submit">
+                        Enviar Mensaje<i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <span class="overlay absolute top-0 left-0 w-0 h-full bg-ReD z-[-1] transition"></span>
+                    </button>
+                </form>
+                <!-- Mapa -->
+                <div class="col w-1/2 p-3 relative h-[50%]">
+                    <img class="w-full h-[30%] mb-3" src="img/maps.png" alt="Mapa">
+                    <div class="info">
+                        <ul>
+                            <li class="mb-1">
+                                <i class="fa-sharp fa-solid fa-location-dot text-ReD inline-block mr-5"></i>
+                                Popayan(Cauca), Colombia
+                            </li>
+                            <li class="mb-1">
+                                <i class="fa-sharp fa-solid fa-mobile-screen text-ReD inline-block mr-5"></i>
+                                Llamame: +57 3145636042
+                            </li>
+                            <li class="mb-1">
+                                <i class="fa-sharp fa-solid fa-envelope text-ReD inline-block mr-5"></i>
+                                Email: Royersolarte22@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
-
     <!-- footer -->
-    <footer>
-      <a href="#inicio" class="arriba">
-        <i class="fa-sharp fa-solid fa-angles-up"></i>
-      </a>
-      <section class="redes">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      </section>
+    <footer class="bg-[#252A2E] text-white pt-12 pr-0 pb-7 pl-0 text-center relative w-full">
+        <a href="#inici" class="arriba arriba animate-bounce w-6 h-6">
+            <i class="fa-sharp fa-solid fa-angles-up"></i>
+        </a>
+        <section class="redes mb-5 flex justify-center">
+            <a class="text-white inline-block border border-white rounded-full w-11 h-11 leading-10 my-10 mx-1 text-xl transition"
+                href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="text-white inline-block border border-white rounded-full w-11 h-11 leading-10 my-10 mx-1 text-xl transition"
+                href="https://github.com/DanielSolarte23"><i class="fa-brands fa-github"></i></a>
+            <a class="text-white inline-block border border-white rounded-full w-11 h-11 leading-10 my-10 mx-1 text-xl transition"
+                href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </section>
     </footer>
-    f
-  </body>
+    <script>
+
+    </script>
+    <script src="/src/script.js"></script>
+</body>
+
 </html>
